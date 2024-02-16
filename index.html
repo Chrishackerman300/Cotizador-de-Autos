@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/spinner.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Proyecto Cotizador de Autos</title>
+</head>
+<body>
+    <main class="principal">
+        <section class="container">
+
+            <!--Formulario--->
+            <form id="formulario" class="formulario">
+                <h1 class="title">Cotizador de Autos</h1>
+
+                <!--Container del formulario-->
+                <div class="formulario-container">
+                    <div class="input-container">
+                        <label for="marca">Marca:</label>
+                        <select name="marca" id="marca">
+                            <option value="">Seleccionar</option>
+                            <option value="1">Americano</option>
+                            <option value="2">Europeo</option>
+                            <option value="3">Asiatico</option>
+                        </select>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="year">Año:</label>
+                        <select name="year" id="year">
+                            <option value="">Seleccionar</option>
+                        </select>
+                    </div>
+
+                    <div class="input-container">
+                        <h3 class="subtitle">Plan de Seguro:</h3>
+                        <label for="basico">Básico:</label>
+                        <input type="radio" name="tipo" id="basico" value="basico" checked>
+
+                        <label for="completo">Completo:</label>
+                        <input type="radio" name="tipo" id="copmleto" value="completo">
+                    </div>
+                </div>
+
+                <!--En este div se almacenará la info de la cotización-->
+                <div id="resultado" class="display"></div>
+
+                <div class="button">
+                    <button type="submit" id="btn-submit" class="btn-submit">Cotizar Auto</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
