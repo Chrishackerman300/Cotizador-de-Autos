@@ -114,3 +114,120 @@ select{
     color: var(--color-3);
     cursor: pointer;
 }
+
+.alerta{
+    width: 60%;
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-3);
+    padding: 10px;
+}
+
+.error{
+    background: var(--bg-error);
+}
+
+.correcto{
+    background: var(--bg-correcto);
+}
+
+.spinner{
+    display: none;
+}
+
+.spinner.show-spinner{
+    display: block;
+}
+
+.show-resultados{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 5px solid var(--bg-correcto);
+    padding: 10px;
+}
+
+.p-title{
+    font-size: 1.9rem;
+    font-family: var(--title);
+    font-weight: 700;
+    color: var(--color-2);
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 4px solid var(--color-1);
+    padding: 5px 0;
+}
+
+.paragraph{
+    font-size: 20px;
+    font-family: var(--title);
+    font-weight: 600;
+    color: var(--color-1);
+}
+
+span{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-1);
+    margin-left: 5px;
+}
+
+/*Responsive*/
+@media screen and (max-width: 800px){
+    .formulario{
+        width: 90%;
+    }
+
+    .formulario-container{
+        display: block;
+    }
+
+    .input-container{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    select{
+        width: 250px;
+    }
+
+    .show-resultados{
+        width: 100%;
+    }
+
+    .btn-submit{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px){
+    body{
+        height: 100%;
+    }
+
+    .formulario{
+        width: 100%;
+        border-radius: 0px;
+        padding: 20px 10px;
+    }
+    
+    .title{
+        font-size: 2rem;
+    }
+
+    label{
+        font-size: 20px;
+    }
+
+    .subtitle{
+        text-align: left;
+    }
+
+    .p-title{
+        text-align: left;
+    }
+}
